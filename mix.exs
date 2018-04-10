@@ -25,7 +25,9 @@ defmodule EctoNetwork.Mixfile do
 
   defp deps do
     [{:ecto, ">= 0.0.0"},
-     {:postgrex, ">= 0.0.0"},
+     # {:postgrex, ">= 0.0.0"},
+     {:db_connection, github: "elixir-ecto/db_connection", override: true},
+     {:postgrex, github: "elixir-ecto/postgrex", override: true},
      {:phoenix_html, ">= 0.0.0", [optional: true]},
      {:ex_doc, ">= 0.0.0", only: :dev}]
   end

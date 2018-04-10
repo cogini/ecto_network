@@ -1,7 +1,7 @@
 # Changelog
 
 ## [Unreleased]
-
+- Unify Postgrex.INET and Postgrex.CIDR
 
 ## [v0.7.0] - 2017-11-16
 - Update mix dependencies

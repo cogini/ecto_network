@@ -110,7 +110,7 @@ defmodule EctoNetworkTest do
 
   test "accepts array of cidr addresses as mixed types and saves" do
     changeset = Device.changeset(%Device{}, %{networks: [
-         %Postgrex.CIDR{address: {127, 0, 0, 0}, netmask: 24},
+         %Postgrex.INET{address: {127, 0, 0, 0}, netmask: 24},
          "127.0.1.0/24"
     ]})
 
